@@ -24,18 +24,20 @@ const Navbar = () => {
           <motion.li className="navbar-item" whileHover={{ scale: 1.1 }}><a href="#services" className="navbar-links">Services</a></motion.li>
           <motion.li className="navbar-item" whileHover={{ scale: 1.1 }}><a href="#skills" className="navbar-links">Skills</a></motion.li>
           {/* <motion.li className="navbar-item" whileHover={{ scale: 1.1 }}><a href="#projects" className="navbar-links">Projects</a></motion.li> */}
-          <motion.li className="navbar-item" whileHover={{ scale: 1.1 }}><a href="/Projects-list" className="navbar-links">Projects</a></motion.li>
+          {/* <motion.li className="navbar-item" whileHover={{ scale: 1.1 }}><a href="/Projects-list" className="navbar-links">Projects</a></motion.li> */}
+          <motion.li className="navbar-item" whileHover={{ scale: 1.1 }}><a href="#projects" className="navbar-links">Projects</a></motion.li>
           <motion.li className="navbar-item" whileHover={{ scale: 1.1 }}><a href="#contact" className="navbar-links">Contact</a></motion.li>
         </motion.ul>
-        <motion.button 
-          className="hire-me-top open-form-button" 
-          whileHover={{ scale: 1.1, backgroundColor: "#e67e22" }} 
-          whileTap={{ scale: 0.9 }}>
-            <a href="#contact"> Hire Me</a>
-        </motion.button>
+        
+            <motion.button 
+            className="hire-me-top open-form-button" 
+            whileHover={{ scale: 1.1, backgroundColor: "#e67e22" }} 
+            whileTap={{ scale: 0.9 }}>
+              <a href="#contact"> Hire Me</a>
+          </motion.button>
       <div className="navbar-toggle" onClick={toggleMenu}>
           <span className="bar"></span>
-          <span className="bar"></span>
+          <span className="bar bar2"></span>
           <span className="bar"></span>
         </div>
       </div>

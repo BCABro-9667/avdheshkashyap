@@ -88,6 +88,7 @@
     transition: all 0.3s ease;
     position: relative;
     border: 1px solid #f0f0f0;
+    cursor: pointer;
   }
   
   .skill-card:hover {
@@ -118,6 +119,7 @@
     font-weight: 600;
     color: #444;
     text-align: center;
+    
   }
   
   /* Skill Tooltip */

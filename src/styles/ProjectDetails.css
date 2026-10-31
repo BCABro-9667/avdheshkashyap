@@ -1,0 +1,145 @@
+/* Global setup */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #222;
+  margin: 0;
+}
+
+.projects-container {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.top-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+/* Individual project layout */
+.project-section {
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header section with title and links */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #007acc;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #FCA61F;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: white;
+}
+
+.project-links a:hover {
+  background-color: #f19c12;
+}
+
+/* Image styling */
+.project-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 25px 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Disclaimer box */
+.project-disclaimer {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #888;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #555;
+  position: relative;
+}
+
+.project-disclaimer::before,
+.project-disclaimer::after {
+  content: '“';
+  font-size: 2rem;
+  color: #ccc;
+  position: absolute;
+}
+
+.project-disclaimer::after {
+  content: '”';
+  bottom: -10px;
+  right: 10px;
+}
+
+/* PortableText / Content styling */
+.project-content {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.project-content h2,
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+  color: #222;
+}
+
+.project-content p {
+  margin: 0 0 1em;
+}
+
+.project-content ul {
+  margin: 1em 0 1.5em 2em;
+  padding-left: 1em;
+}
+
+.project-content ul > li {
+  list-style: disc;
+  margin-bottom: 0.5em;
+  color: #444;
+}
+
+
+.project-links>.live-linkss{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

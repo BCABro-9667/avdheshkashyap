@@ -7,7 +7,9 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Error404 from "./pages/Error404";
-// import ProjectsList from "./pages/ProjectsList";
+import ProjectDetails from './pages/ProjectDetails'; // Adjust path as needed
+// import Chatbot from "./components/Chatbott";
+
 import "./global.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -28,7 +30,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Error404" element={<Error404 />} />
-        {/* <Route path="/Projects-list" element={<ProjectsList />} /> */}
+        <Route path="/project/:slug" element={<ProjectDetails />} />
 
       </Routes>
       <Footer />

@@ -24,27 +24,42 @@ import quote from '../img/Quotation.jpg';
 import dahej from '../img/dahejj.jpg';
 import breakup from '../img/brekcup.jpg';
 import phonepe from '../img/phonepe.jpg';
-
+import URL_Shortner from '../img/shortly.png'
+import linktree from '../img/linktree.png'
+import countries from '../img/countries.png'
+import chessCentral from '../img/chessCentral.png'
+import Plan from '../img/Plan.png'
+import Github from '../img/github.png'
+import SillyBot from '../img/SillyBot.png'
+import QuoteFlows from '../img/QuoteFlows.png'
 
 const projects = [
-  { id: 1, name: "CheckmateClub", category: "funny", img: CHECKMATE, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "https://checkmateclub.netlify.app/" },
-  { id: 21, name: "Get me Chai", category: "ecommerce", img: phonepe, tags: ["React.js", "Node.js", "MongoDB", "API", "PhonePe Getway"], link: "https://get-me-a-chai-avdhesh-kumarr.netlify.app/" },
-  { id: 13, name: "ChessClock", category: "chess", img: chessClock, tags: ["React.js"], link: "https://chess-clock-play.netlify.app/" },
-  { id: 14, name: "Love4U Musics", category: "music", img: music, tags: ["React.js"], link: "https://love4uu.netlify.app/" },
-  { id: 2, name: "AVStorage", category: "portfolio", img: AVS, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "https://avstoragecloudd.netlify.app/" },
+  { id: 25, name: "ChessmateCentral", category: "funny", img: chessCentral, tags: ["Next.js", "Node.js", "MongoDB", "API",], link: "https://chess-centrals.netlify.app/" },
+  { id: 26, name: "MyLifeHub", category: "funny", img: Plan, tags: ["Next.js", "Node.js", "MongoDB", "API"], link: "https://my-life-hub.netlify.app/" },
   { id: 3, name: "E-commerce Website", category: "ecommerce", img: ET, tags: ["Wordpress"], link: "https://smtems.com/" },
+  { id: 1, name: "CheckmateClub", category: "funny", img: CHECKMATE, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "https://checkmateclub.netlify.app/" },
+  { id: 28, name: "SillyBot", category: "funny", img: SillyBot, tags: ["React.js", "GeminiAPI"], link: "https://silly-chatbot.netlify.app/" },
+  { id: 21, name: "Get me Chai", category: "ecommerce", img: phonepe, tags: ["React.js", "Node.js", "MongoDB", "API", "PhonePe Getway"], link: "https://get-me-a-chai-avdhesh-kumarr.netlify.app/" },
+  { id: 22, name: "URL Shortner", category: "ecommerce", img: URL_Shortner, tags: ["React.js", "API", "Local Storage"], link: "https://shortly-free-url-shortner.netlify.app/" },
+  { id: 18, name: "QuoteFlows", category: "ecommerce", img: QuoteFlows, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
+  { id: 23, name: "Linktree", category: "ecommerce", img: linktree, tags: ["React.js", "Node.js", "MongoDB", "Express"], link: "https://app.netlify.com/projects/linktreeeeee/" },
+  { id: 2, name: "AVStorage", category: "portfolio", img: AVS, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "https://avstoragecloudd.netlify.app/" },
+  { id: 13, name: "ChessClock", category: "chess", img: chessClock, tags: ["React.js"], link: "https://chess-clock-play.netlify.app/" },
+  { id: 27, name: "Github", category: "funny", img: Github, tags: ["React.js", "API"], link: "https://app.netlify.com/projects/github-user-finderrr/" },
   { id: 4, name: "DOB Calculation", category: "ecommerce", img: DOB, tags: ["HTML", "CSS", "JavaScript"], link: "https://janam-kundli-know.netlify.app/" },
-  { id: 18, name: "Quotation Managment System ", category: "ecommerce", img: quote, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
-  { id: 12, name: "Contact Book", category: "ecommerce", img: contactbook, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
+  { id: 14, name: "Love4U Musics", category: "music", img: music, tags: ["React.js"], link: "https://love4uu.netlify.app/" },
   { id: 15, name: "MyTasks", category: "ecommerce", img: task, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
-  { id: 5, name: "Text Formatter", category: "ecommerce", img: TEXT, tags: ["React.js"], link: "#" },
-  { id: 17, name: "FullStack Blog", category: "ecommerce", img: blog, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
-  { id: 7, name: "iURLManager", category: "ecommerce", img: URL, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
-  { id: 19, name: "MyDhejCalculate.com", category: "ecommerce", img: dahej, tags: ["React.js"], link: "https://mydahejcalculatecom.netlify.app/" },
-  { id: 20, name: "Breakup Settlement Calculator", category: "ecommerce", img: breakup, tags: ["React.js"], link: "https://breakup-settelement-calculator.netlify.app/" },
-  { id: 16, name: "Sarkari Result", category: "ecommerce", img: sarkari, tags: ["HTML", "CSS", "JS"], link: "/Error404" },
-  { id: 8, name: "News Website", category: "ecommerce", img: NEWS, tags: ["HTML", "CSS", "JS", "API"], link: "/Error404" },
   { id: 9, name: "Chess Tournament Reg. From", category: "ecommerce", img: FORM, tags: ["React.js", "App_Script"], link: "https://chess-tournament-registration-form.netlify.app/" },
+  { id: 12, name: "Contact Book", category: "ecommerce", img: contactbook, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
+  { id: 17, name: "FullStack Blog", category: "ecommerce", img: blog, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
+  // { id: 29, name: "QuoteFlows", category: "funny", img: QuoteFlows, tags: ["React.js", "GeminiAPI"], link: "https://silly-chatbot.netlify.app/" },
+  { id: 24, name: "Countries Details", category: "ecommerce", img: countries, tags: ["React.js", "API"], link: "https://where-in-the-worlddd.netlify.app/" },
+  { id: 5, name: "Text Formatter", category: "ecommerce", img: TEXT, tags: ["React.js"], link: "#" },
+  { id: 7, name: "iURLManager", category: "ecommerce", img: URL, tags: ["React.js", "Node.js", "MongoDB", "API"], link: "/Error404" },
+  { id: 16, name: "Sarkari Result", category: "ecommerce", img: sarkari, tags: ["HTML", "CSS", "JS"], link: "/Error404" },
+  { id: 20, name: "Breakup Settlement Calculator", category: "ecommerce", img: breakup, tags: ["React.js"], link: "https://breakup-settelement-calculator.netlify.app/" },
+  { id: 19, name: "MyDhejCalculate.com", category: "ecommerce", img: dahej, tags: ["React.js"], link: "https://mydahejcalculatecom.netlify.app/" },
+  { id: 8, name: "News Website", category: "ecommerce", img: NEWS, tags: ["HTML", "CSS", "JS", "API"], link: "/Error404" },
   { id: 6, name: "Blog Website", category: "ecommerce", img: BLOG, tags: ["HTML", "CSS", "JavaScript"], link: "/Error404" },
   { id: 10, name: "MDU Result", category: "ecommerce", img: MDU, tags: ["HTML", "CSS", "JS"], link: "result-mdurtkin.netlify.app" },
   { id: 11, name: "Browser Local Storage", category: "ecommerce", img: L_STOAAGE, tags: ["HTML", "CSS", "JS"], link: "https://prank-master.netlify.app/" },

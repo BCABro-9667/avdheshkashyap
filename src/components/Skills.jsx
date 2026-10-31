@@ -57,7 +57,7 @@ const SkillsSection = () => {
     const backend = ["Node.js", "Express.js"];
     const database = ["MongoDB", "MySQL"];
     const design = ["Photoshop", "Canva", "WordPress", "Shopify"];
-    const tools = ["GitHub"];
+    const tools = ["GitHub"]; 
 
     if (frontend.includes(skillName)) return "frontend";
     if (backend.includes(skillName)) return "backend";
@@ -108,11 +108,11 @@ const SkillsSection = () => {
               >
                 <img src={skill.img} alt={skill.name} height="50" />
                 <div className="skill-name">{skill.name}</div>
-                {selectedSkill?.name === skill.name && (
+                {/* {selectedSkill?.name === skill.name && (
                   <div className="skill-tooltip" style={{ backgroundColor: skill.color }}>
                     {skill.description}
                   </div>
-                )}
+                )} */}
               </div>
             ))}
           </div>

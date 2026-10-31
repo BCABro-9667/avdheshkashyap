@@ -62,8 +62,12 @@
     background-color: black;
     margin: 4px 0;
     transition: 0.4s;
+    border-radius: 50px;
 }
 
+.bar2{
+  width: 15px;
+}
 .hire-me-top{
     padding: 15px 40px;
     border-radius: 50px;
@@ -103,6 +107,10 @@
 
     .navbar-toggle {
         display: flex;
+    }
+
+    .open-form-button{
+      display: none;
     }
 }
 

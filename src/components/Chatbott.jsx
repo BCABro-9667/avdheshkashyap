@@ -2,6 +2,7 @@
 // import '../styles/chatbot.css';
 
 // const Chatbot = () => {
+//   const [isOpen, setIsOpen] = useState(false);
 //   const [messages, setMessages] = useState([]);
 //   const [input, setInput] = useState('');
 //   const [isTyping, setIsTyping] = useState(false);
@@ -11,14 +12,13 @@
 //     skills: ['React', 'JavaScript', 'Node.js', 'HTML/CSS', 'UI/UX Design', 'Python', 'MongoDB'],
 //     services: ['Web Development', 'Chatbot Development', 'UI Design', 'API Integration', 'Technical Consulting'],
 //     personalDetails: {
-//       name: 'Your Name',
+//       name: 'Avdhesh Kumar',
 //       location: 'Your Location',
 //       email: 'your.email@example.com',
-//       bio: 'Passionate developer with expertise in creating interactive web applications and chatbots.'
+//       bio: 'Passionate web developer with expertise in creating interactive web applications.'
 //     },
 //     experience: [
-//       { role: 'Frontend Developer', company: 'Tech Corp', duration: '2022-Present' },
-//       { role: 'UI Designer', company: 'Design Studio', duration: '2020-2022' }
+//       { role: 'Web Developer', company: 'Tech Corp', duration: '2022-Present' }
 //     ],
 //     education: [
 //       { degree: 'B.Sc Computer Science', institution: 'University Name', year: '2020' }
@@ -116,7 +116,6 @@
 //   };
 
 //   const handleCommandClick = (command) => {
-//     // Simulate user sending the command
 //     setInput(command);
 //     setTimeout(() => {
 //       handleSendMessage();
@@ -132,7 +131,6 @@
 //       message: formData.get('message')
 //     };
     
-//     // Add user message
 //     const userMessage = {
 //       sender: 'user',
 //       text: 'Submitted contact form',
@@ -141,7 +139,6 @@
 //     setMessages(prev => [...prev, userMessage]);
 //     setIsTyping(true);
 
-//     // Simulate bot response
 //     setTimeout(() => {
 //       const botMessage = {
 //         sender: 'bot',
@@ -154,79 +151,90 @@
 //   };
 
 //   return (
-//     <div className="chatbot-container">
-//       <div className="chatbot-header">
-//         <div className="chatbot-title">
-//           <h3>Portfolio Assistant</h3>
-//           <span className="chatbot-time">Today</span>
-//         </div>
-//       </div>
+//     <>
+//       <button 
+//         className="chatbot-toggle-button"
+//         onClick={() => setIsOpen(!isOpen)}
+//       >
+//         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+//           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+//         </svg>
+//       </button>
 
-//       <div className="chatbot-messages">
-//         {messages.map((msg, index) => (
-//           <div key={index} className={`message ${msg.sender}`}>
-//             {msg.sender === 'bot' && (
-//               <div className="message-sender">Portfolio Assistant</div>
-//             )}
-//             <div className="message-content">
-//               <p>{msg.text}</p>
-//               {msg.isList && (
-//                 <ul>
-//                   {msg.items.map((item, i) => (
-//                     <li key={i}>{item}</li>
-//                   ))}
-//                 </ul>
-//               )}
-//               {msg.isForm && (
-//                 <form className="contact-form" onSubmit={handleContactSubmit}>
-//                   <input type="text" name="name" placeholder="Your Name" required />
-//                   <input type="email" name="email" placeholder="Your Email" required />
-//                   <textarea name="message" placeholder="Your Message" required></textarea>
-//                   <button type="submit">Send Message</button>
-//                 </form>
-//               )}
-//             </div>
-//             <div className="message-time">{msg.time}</div>
+//       <div className={`chatbot-container ${isOpen ? 'show' : ''}`}>
+//         <div className="chatbot-header">
+//           <div className="chatbot-title">
+//             <h3>Portfolio Assistant</h3>
+//             <span className="chatbot-time">Today</span>
 //           </div>
-//         ))}
-//         {isTyping && (
-//           <div className="message bot">
-//             <div className="message-sender">Portfolio Assistant</div>
-//             <div className="message-content typing">
-//               <div className="typing-indicator">
-//                 <span></span>
-//                 <span></span>
-//                 <span></span>
+//           <button className="close-btn" onClick={() => setIsOpen(false)}>×</button>
+//         </div>
+
+//         <div className="chatbot-messages">
+//           {messages.map((msg, index) => (
+//             <div key={index} className={`message ${msg.sender}`}>
+//               {msg.sender === 'bot' && (
+//                 <div className="message-sender">Portfolio Assistant</div>
+//               )}
+//               <div className="message-content">
+//                 <p>{msg.text}</p>
+//                 {msg.isList && (
+//                   <ul>
+//                     {msg.items.map((item, i) => (
+//                       <li key={i}>{item}</li>
+//                     ))}
+//                   </ul>
+//                 )}
+//                 {msg.isForm && (
+//                   <form className="contact-form" onSubmit={handleContactSubmit}>
+//                     <input type="text" name="name" placeholder="Your Name" required />
+//                     <input type="email" name="email" placeholder="Your Email" required />
+//                     <textarea name="message" placeholder="Your Message" required></textarea>
+//                     <button type="submit">Send Message</button>
+//                   </form>
+//                 )}
+//               </div>
+//               <div className="message-time">{msg.time}</div>
+//             </div>
+//           ))}
+//           {isTyping && (
+//             <div className="message bot">
+//               <div className="message-sender">Portfolio Assistant</div>
+//               <div className="message-content typing">
+//                 <div className="typing-indicator">
+//                   <span></span>
+//                   <span></span>
+//                   <span></span>
+//                 </div>
 //               </div>
 //             </div>
-//           </div>
-//         )}
-//       </div>
+//           )}
+//         </div>
 
-//       <div className="quick-commands">
-//         <button onClick={() => handleCommandClick('Show my skills')}>Skills</button>
-//         <button onClick={() => handleCommandClick('What services do you offer?')}>Services</button>
-//         <button onClick={() => handleCommandClick('Tell me about yourself')}>About Me</button>
-//         <button onClick={() => handleCommandClick('What is your experience?')}>Experience</button>
-//         <button onClick={() => handleCommandClick('What is your education?')}>Education</button>
-//         <button onClick={() => handleCommandClick('How can I contact you?')}>Contact</button>
-//       </div>
+//         <div className="quick-commands">
+//           <button onClick={() => handleCommandClick('Show my skills')}>Skills</button>
+//           <button onClick={() => handleCommandClick('What services do you offer?')}>Services</button>
+//           <button onClick={() => handleCommandClick('Tell me about yourself')}>About Me</button>
+//           <button onClick={() => handleCommandClick('What is your experience?')}>Experience</button>
+//           <button onClick={() => handleCommandClick('How can I contact you?')}>Contact</button>
+//         </div>
 
-//       <div className="chatbot-input">
-//         <input
-//           type="text"
-//           value={input}
-//           onChange={(e) => setInput(e.target.value)}
-//           placeholder="Type your message..."
-//           onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-//         />
-//         <button onClick={handleSendMessage}>Send</button>
-//       </div>
+//         <div className="chatbot-input">
+//           <input
+//             type="text"
+//             value={input}
+//             onChange={(e) => setInput(e.target.value)}
+//             placeholder="Type your message..."
+//             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+//           />
+//           <button onClick={handleSendMessage}>Send</button>
+//         </div>
 
-//       <div className="chatbot-footer">
-//         <span>Powered by <strong>Your Portfolio</strong></span>
+//         <div className="chatbot-footer">
+//           <span>Powered by <strong>Avdhesh's Portfolio</strong></span>
+//         </div>
 //       </div>
-//     </div>
+//     </>
 //   );
 // };
 

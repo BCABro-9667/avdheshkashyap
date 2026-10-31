@@ -1,21 +1,56 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Josefin Sans", serif !important;
-
-  }
-  
-.container{
-      padding: 20px 6%;
-
 }
 
-  
-  
-  :root{
+.container {
+    padding: 20px 6%;
+}
+
+:root {
+    /* Light theme variables */
     --mainColor: #ffffff;
+    --textColor: #333333;
+    --backgroundColor: #ffffff;
+    --secondaryBackground: #f5f5f5;
+    --borderColor: #e0e0e0;
     --mainFamily: "Josefin Sans", sans-serif;
+}
+
+[data-theme="dark"] {
+    /* Dark theme variables */
+    --mainColor: #1a1a1a;
+    --textColor: #ffffff;
+    --backgroundColor: #121212;
+    --secondaryBackground: #1e1e1e;
+    --borderColor: #333333;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
 }
